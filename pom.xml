@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>TS</groupId>
+  <artifactId>TradeStore</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>TradeStore</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <slf4jVersion>1.7.5</slf4jVersion>
+    <junitversion>5.5.2</junitversion>
+    <maven.compiler.source>1.8</maven.compiler.source>
+ 	<maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+  	<dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>slf4j-api</artifactId>
+		<version>${slf4jVersion}</version>
+	</dependency>
+   <dependency>
+       <groupId>org.slf4j</groupId>
+       <artifactId>slf4j-log4j12</artifactId>
+       <version>${slf4jVersion}</version>
+   </dependency>
+    <dependency>
+    	<groupId>org.junit.jupiter</groupId>
+    	<artifactId>junit-jupiter-engine</artifactId>
+    	<version>${junitversion}</version>
+    	<scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
